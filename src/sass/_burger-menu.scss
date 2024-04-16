@@ -1,6 +1,6 @@
 .container-burger {
     position: absolute;
-    right: 20px;
+    right: 27px;
     top: 20px;
 }
 
@@ -28,11 +28,11 @@
 .menu-container {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    right: 0;
+    width: 254px;
+    height: 100%;
     background-color: var(--pink-modal);
-    z-index: 999;
+    z-index: 1;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
     padding-top: 123px;
@@ -96,17 +96,25 @@
     align-items: center;
 }
 
+.container-buy-now-burger {
+    display: flex;
+    justify-content: center;
+}
 
-/* Media query pentru ecrane între 481px și 768px */
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+
+
+/* Media query pentru ecrane de la 768px */
+
+@media only screen and (min-width: 768px) {
     .nav-bar{
         display: none;
     }
     .container-burger{
         position: absolute;
         right: 200px;
-        top: 50px;
+        top: 53px;
     }
     
     .container-burger svg {
@@ -133,11 +141,11 @@
     .menu-container {
         position: fixed;
         top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
+        right: 0;
+        width: 254px;
+        height: 100%;
         background-color: var(--pink-modal);
-        z-index: 999;
+        z-index: 1;
         transform: translateX(100%);
         transition: transform 250ms ease-in-out;
         padding-top: 123px;
@@ -208,14 +216,23 @@
         justify-content: center;
         align-items: center;
     }
+    .container-buy-now-burger{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    
 }
 
-/* Media query pentru ecrane între 769px și 1280px */
+/* Media query pentru ecrane  1280px și mai mari */
 
-@media only screen and (min-width: 769px) and (max-width: 1280px) {
+@media only screen and (min-width: 1280px)  {
     .menu-toggle {
         display: none;
     }
+
+        
         .nav-bar {
             display: flex;
             list-style: none;
@@ -241,19 +258,4 @@
       
 }
 
-/* Media query pentru ecrane mai mari de 1281px */
 
-@media only screen and (min-width: 1281px) {
-    .container {
-        display: none;
-    }
-        .nav-bar {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            gap: 35px;
-            width: 541px;
-            height: 21px;
-        }
-
-}
