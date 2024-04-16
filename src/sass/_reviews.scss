@@ -1,3 +1,9 @@
+.testimonials {
+    display: flex;
+    justify-content: center;
+
+}
+
 .carousel {
     display: flex;
     flex-direction: column;
@@ -30,12 +36,13 @@
     line-height: 30px;
     position: relative;
     border: 1px solid var(--reviews-border);
-    width: 968px;
-    height: 138px;
+    width: 280px;
+    height: 327px;
     justify-content: center;
+    text-align: start;
 }
 
-.rvw-text p::before {
+.rvw-text blockquote::before {
     content: url('../images/reviews/quotation-marks.png');
     width: 54px;
     height: 40px;
@@ -43,8 +50,9 @@
 
 .rvw-text {
     position: relative;
-    width: 822px;
-    height: 75px;
+    width: 180px;
+    height: 213px;
+    top: 20px;
 }
 
 // .rvw-text p {
@@ -137,6 +145,37 @@
 //     }
 // }
 
+/* Media queries for screens wider than 768px */
+@media (min-width: 768px) {
+    .rvw {
+        width: 620px;
+        height: 164px;
+        text-align: center;
+    }
+    .rvw-text {
+        width: 608px;
+        height: 108px;
+    }
 
+    .carousel {
 
+    }
+}
+
+@media (min-width: 1280px) {
+ .rvw {
+    width: 968px;
+    height: 138px;
+ }
+
+ .rvw-text {
+    width: 822px;
+    height: 75px;
+ }
+
+ .carousel {
+    width: 100%;
+    margin-right: 0;
+ }
+}
 
