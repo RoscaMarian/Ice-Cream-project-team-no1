@@ -96,8 +96,8 @@
     height: 40px;
     border-radius: 50%;
     border: none;
-    background-color: #ffffff;
-    color: #D41443;
+    background-color: var(--white);
+    color: var(--red-button);
     text-align: center;
     margin-left: 44%;
     margin-bottom: 60px;
@@ -105,7 +105,8 @@
 }
 
 .expand-btn:hover {
-    background-color: rgb(218, 209, 209);
+    background-color: var(--grey);
+    transition: var(--transition);
 }
 
 .card-1 h2::before {
@@ -136,8 +137,8 @@
 }
 
 .back-btn {
-    color: #D41443;
-    background-color: #ffffff;
+    color: var(--red-button);
+    background-color: var(--white);
     width: 80px;
     border: none;
     text-align: center;
@@ -145,6 +146,11 @@
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 20px;
+}
+
+.back-btn:hover {
+    background-color: var(--grey);
+    transition: var(--transition);
 }
 
 @media screen and (min-width:768px) {

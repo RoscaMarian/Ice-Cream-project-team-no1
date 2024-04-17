@@ -89,6 +89,7 @@
 .social-link-items:hover,
 .social-link-items:visited {
     background-color: var(--red-passion);
+    transition: var(--transition);
 }
 
 .contact-message {
@@ -104,6 +105,11 @@
 .phone {
     text-decoration: none;
     color: var(--red-passion);
+}
+
+a.phone:hover {
+    transition: var(--transition);
+    color: var(--black-pink);
 }
 
 .line {

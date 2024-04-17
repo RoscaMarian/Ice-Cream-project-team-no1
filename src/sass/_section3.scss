@@ -110,7 +110,9 @@
 .btn-read-more:hover {
   cursor: pointer;
 
-  background-color: var(--pink-elipse);
+  background-color: var(--red-button);
+  color: var(--white);
+  transition: var(--transition);
 }
 
 /* Section 3 Advantages */
@@ -232,6 +234,7 @@
   width: 60%;
   height:auto;
   border-radius: 40px;
+  margin: auto;
 }
 
 .modal-read-more {
@@ -348,8 +351,7 @@
     border: 1px solid #888;
     width: 50%;
     border-radius: 40px;
-    margin-left: 100px;
-    min-height: 400px;
+    height: auto;
   }
 
   .modal-read-more {
@@ -466,11 +468,11 @@
     cursor: pointer;
   }
 
-  .btn-read-more:hover {
-    cursor: pointer;
+  // .btn-read-more:hover {
+  //   cursor: pointer;
 
-    background-color: var(--pink-elipse);
-  }
+  //   background-color: var(--pink-elipse);
+  // }
 
   /* Section 3 Advantages */
 
@@ -592,8 +594,7 @@
     border: 1px solid #888;
     width: 50%;
     border-radius: 40px;
-    height: 100px;
-    min-height: 350px;
+    height: auto;
     line-height: 28.16px;
   }
 
