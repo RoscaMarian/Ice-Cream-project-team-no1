@@ -243,3 +243,61 @@
     top: 163;
     right: 34;
 }
+
+@media screen and (max-width: 767px) {
+
+    /* Stiluri pentru telefoane mobile */
+    .nav-bar {
+        display: none;
+    }
+
+    .milk-can {
+        display: none;
+    }
+
+    .tasty-chiquita {
+        display: none;
+    }
+
+    .cafes-group {
+        display: none;
+    }
+
+    .duo {
+        display: none;
+    }
+
+    .food-elipse {
+        display: none;
+    }
+
+    .buy-button {
+        display: none;
+    }
+
+    .hero-right {
+        z-index: 1;
+    }
+
+    .second-button {
+        position: relative;
+        z-index: 1;
+    }
+
+    .third-title {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-right {
+        display: grid;
+        justify-content: space-around;
+        right: 40px;
+        top: 28px;
+    }
+
+    .first-button {
+        position: relative;
+        z-index: 1;
+    }
+}

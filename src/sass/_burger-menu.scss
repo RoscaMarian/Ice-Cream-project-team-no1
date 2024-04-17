@@ -107,7 +107,7 @@
 
 /* Media query pentru ecrane de la 768px */
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .nav-bar{
         display: none;
     }
@@ -227,12 +227,15 @@
 
 /* Media query pentru ecrane  1280px și mai mari */
 
-@media only screen and (min-width: 1280px)  {
-    .menu-toggle {
+@media screen and (min-width: 1280px)  {
+    button.menu-toggle.js-menu-container {
+        display: none;
+    }
+    
+    .container.burger-svg {
         display: none;
     }
 
-        
         .nav-bar {
             display: flex;
             list-style: none;
@@ -241,6 +244,7 @@
             width: 541px;
             height: 21px;
         }
+
     .buy-button {
         width: 159px;
         height: 44px;

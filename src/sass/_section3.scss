@@ -1,10 +1,7 @@
-.body-how-its-made {
-  display: inline-block;
-}
 .subtitle-how-its-made h2 {
   font-family: var(--big-font);
-  font-size: var(--h2);
   font-weight: 400;
+  font-size: 18px;
   color: var(--pink-elipse);
   line-height: 20.61px;
   letter-spacing: 0.04em;
@@ -22,15 +19,17 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin: 0;
+  width: 200px;
 }
 
 .subtitle-how-its-made {
-    display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+  display: flex;
+  justify-content: center;
+   align-items: center;
+  flex-direction: column;
   padding-top: 60px;
   gap: 16px;
+  grid-template-rows: repeat(4, 1fr);
 }
 
 .how-its-made {
@@ -74,8 +73,9 @@
   line-height: 19.44px;
   letter-spacing: 0.04em;
   font-weight: bold;
-  grid-template-rows: repeat(4, 1fr);
+
   white-space: pre-line;
+  width: 220px;
 }
 
 .p-how-its-made-2 {
@@ -83,14 +83,13 @@
   font-weight: var(--weight-fnt-medium);
   font-size: 12px;
   line-height: 19.44px;
-  margin-bottom: 40px;
   letter-spacing: 0.04em;
   grid-template-rows: repeat(4, 1fr);
   white-space: pre-line;
+  width: 220px;
 }
 
-.btn-read-more {
-  margin-top: 40px;
+#myBtn.btn-read-more {
   border: none;
   color: var(--red-button);
   font: var(--common-font);
@@ -105,6 +104,7 @@
   font-size: 16px;
   border-radius: 22px;
   cursor: pointer;
+  margin-bottom: 40px;
 }
 
 .btn-read-more:hover {
@@ -145,6 +145,7 @@
   letter-spacing: 0.02em;
   color: var(--black);
   text-align: left;
+  width: 274px;
 }
 
 .advantages-grid {
@@ -174,6 +175,7 @@
 .advantages-container {
   grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
   gap: 20px; /* Gap between grid items */
+  padding-bottom: 120px;
 }
 
 .advantages {
@@ -189,21 +191,23 @@
   height: 50px;
   background-image: url('../images/how-it-is-made/production.png');
   background-size: cover;
-  margin-bottom: 10px;
+  margin-bottom: 33px;
 }
+
 .icon-icecream-apple {
   width: 50px;
   height: 50px;
   background-image: url('../images/how-it-is-made/icecream-apple.png');
   background-size: cover;
-  margin-bottom: 10px;
+  margin-bottom: 33px;
 }
+
 .icon-flavours {
   width: 50px;
   height: 50px;
   background-image: url('../images/how-it-is-made/flavours.png');
   background-size: cover;
-  margin-bottom: 10px;
+  margin-bottom: 33px;
 }
 
 .container-p1-how-its-made {
@@ -247,20 +251,31 @@
 }
 
 /* Stilizare Tableta  768px  */
-@media (min-width: 768px) and (max-width: 1158px) {
-  .body-how-its-made {
-    display: inline-block;
-  }
+@media (min-width: 768px) and (max-width: 1279px) {
+  // .body-how-its-made {
+  //   display: inline-block;
+  // }
   .container-how-its-made {
-    // height: 1092px;
-    width: 1200px;
+    height: 1092px;
+    width: 100%;
   }
+
+  .subtitle-how-its-made h2 {
+      font-size: 26px;
+  }
+
+  .h1-how-its-made {
+      width: 429px;
+      font-size: 48px;
+  }
+
   .advantages-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
     gap: 20px;
     width: 768px;
   } /* Gap between grid items */
+
   .advantages {
     display: flex;
     flex-direction: column;
@@ -283,10 +298,13 @@
   .container-img-p img {
     width: 336px;
     height: 335px;
-    margin-right: 20px;
-    padding-left: 32px;
-    margin-bottom: 265px;
+    margin-left: 32px;
   }
+
+  .btn-read-more {
+    margin-top: 28px;
+  }
+
   .h3-section3-advantages {
     font-family: var(--big-font);
     font-weight: 400;
@@ -306,6 +324,7 @@
     letter-spacing: 0.02em;
     color: var(--black);
     text-align: left;
+    width: 165px;
   }
   .icon-production {
     width: 50px;
@@ -328,6 +347,12 @@
     background-size: cover;
     margin-bottom: 10px;
   }
+
+    .p-how-its-made-1,
+    .p-how-its-made-2 {
+        width:334px;
+    }
+
   /* The Modal (background) */
   .modal {
     display: none;
@@ -364,10 +389,10 @@
   }
 }
 /* Desktop styles */
-@media screen and (min-width: 1159px) {
-  .body-how-its-made {
-    display: inline-block;
-  }
+@media screen and (min-width: 1279px) {
+  // .body-how-its-made {
+  //   display: inline-block;
+  // }
   .subtitle {
     font-family: var(--big-font);
     font-size: 30px;
@@ -382,19 +407,21 @@
   .h1-how-its-made {
     font-family: var(--big-font);
     font-weight: 400;
-    font-size: 58px;
+    font-size: 66px;
     color: var(--red-passion);
     text-align: center;
     line-height: 66.41px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: 0;
+    width: 534px;
   }
 
   .subtitle-how-its-made {
     text-align: center;
     margin-bottom: 16px;
     padding-top: 60px;
+    font-size: 34px;
   }
 
   .how-its-made {
@@ -437,6 +464,7 @@
     font-weight: bold;
     grid-template-rows: repeat(4, 1fr);
     white-space: pre-line;
+    width: 400px;
   }
 
   .p-how-its-made-2 {
@@ -448,10 +476,10 @@
     letter-spacing: 0.04em;
     grid-template-rows: repeat(4, 1fr);
     white-space: pre-line;
+    width: 401px;
   }
 
   .btn-read-more {
-    margin-top: 40px;
     border: none;
     color: var(--red-button);
     font: var(--common-font);
@@ -505,6 +533,7 @@
     color: var(--black);
     letter-spacing: 0.02em;
     text-align: left;
+    width: 288px;
   }
 
   .advantages-grid {
