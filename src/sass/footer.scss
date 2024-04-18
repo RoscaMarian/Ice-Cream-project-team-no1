@@ -17,48 +17,44 @@
 
 .medium-footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    margin: 24px auto 0;
 }
 
 .left-footer {
-    width: 40%;
-    padding-left: 20px;
-}
-.central-footer {
-    width: 26%;
-}
-
-.right-footer {
-    width: 34%;
+    width: 234px;
+    margin-bottom: 40px;
 }
 
 .motto1 {
     font-family: var(--big-font);
-    font-size: var(--h2);
+    font-size: 18px;
     font-weight: var(--weight-fnt-common);
-    line-height: 34.35px;
+    line-height: 20.61px;
     letter-spacing: 0.04em;
     text-align: left;
     color: var(--pink-elipse);
-
+    margin-bottom: 24px;
+    margin-top: 0;
 }
 
 .motto2 {
     font-family: var(--big-font);
-    font-size: var(--hero-span-font-size);
+    font-size: 34px;
     font-weight: var(--weight-fnt-common);
-    line-height: 66.41px;
-    letter-spacing: 0.06em;
+    line-height: 38.93px;
+    letter-spacing: 0.04em;
     text-align: left;
     color: var(--red-passion);
-    margin: 10px 0px 10px 0px;
+    margin: 0px;
 }
 
 .social-media {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 40px;
 }
 
 .social-links-list {
@@ -66,6 +62,9 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding: 0;
+    gap: 28.24px;
+    margin: 0;
 }
 
 .social-icon {
@@ -82,8 +81,6 @@
     padding: 7px 0px 0px 7px;
     background-color: var(--pink-svg);
     border-radius: 50%;
-    margin-left: 10px;
-    margin-right: 20px;
 }
 
 .social-link-items:hover,
@@ -94,12 +91,12 @@
 
 .contact-message {
     text-align: right;
-    padding-right: 20px;
     font-family: var(--common-font);
-    font-size: var(--primary-font-size);
+    font-size: 12px;
     font-weight: var(--weight-fnt-big);
-    line-height: 29.76px;
+    line-height: 22.32px;
     letter-spacing: 0.02em;
+    margin: 0;
 }
 
 .phone {
@@ -121,7 +118,7 @@ a.phone:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .copyright {
@@ -132,4 +129,76 @@ a.phone:hover {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--black-pink);
+    display: flex;
+    flex-direction: column;
+    margin: 16px auto 4px;
+}
+
+.copyright-writing {
+    margin: 0 auto;
+}
+
+@media screen and (min-width:768px) {
+    .medium-footer {
+        flex-direction: row;
+        gap: 100px;
+    }
+    .social-media {
+        padding: 60px 0 0;
+    }
+    .contact-message {
+    font-size: 14px;    
+    line-height: 26.04px;
+    }
+    .motto1 {
+        font-size: 26px;
+        line-height: 29.77px;
+    }
+    .motto2 {
+    font-size: 48px;
+    line-height: 54.96px;
+    letter-spacing: 0.06em;
+    }
+    .left-footer {
+        margin-bottom: 0px;
+        width: 340px;
+    }
+    .copyright {
+        flex-direction: row;
+        margin: 8px auto;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .medium-footer {
+        margin-top: 24px;
+        gap: 375px;
+    }
+    .bottom-footer {
+        margin-top: 60px;
+    }
+    .left-footer {
+        width: 474px;
+    }
+    .motto1 {
+        font-size: 30px;
+        line-height: 34.35px;
+    }
+    .motto2 {
+        font-size: 57.5px;
+        line-height: 66.41px;
+    }
+    .motto1 {
+        margin-bottom: 16px;
+    }
+    .contact-message {
+    font-size: 16px;
+    line-height: 29.76px;
+    letter-spacing: 0.02em;
+    }
+    .social-media {
+        padding: 15px 0 0;
+        gap: 0;
+        justify-content: space-between;
+    }
 }
