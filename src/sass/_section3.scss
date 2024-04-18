@@ -62,7 +62,6 @@
 
 .container-how-its-made {
   width: 100%;
-  height: 1564px;
 }
 
 .p-how-its-made-1 {
@@ -107,7 +106,8 @@
   margin-bottom: 40px;
 }
 
-.btn-read-more:hover {
+
+#myBtn.btn-read-more:hover {
   cursor: pointer;
 
   background-color: var(--red-button);
@@ -173,8 +173,8 @@
 }
 
 .advantages-container {
-  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-  gap: 20px; /* Gap between grid items */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
   padding-bottom: 120px;
 }
 
@@ -251,7 +251,7 @@
 }
 
 /* Stilizare Tableta  768px  */
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
   // .body-how-its-made {
   //   display: inline-block;
   // }
@@ -261,7 +261,7 @@
   }
 
   .subtitle-how-its-made h2 {
-      font-size: 26px;
+      font-size: 30px;
   }
 
   .h1-how-its-made {
@@ -389,11 +389,11 @@
   }
 }
 /* Desktop styles */
-@media screen and (min-width: 1279px) {
+@media screen and (min-width: 1280px) {
   // .body-how-its-made {
   //   display: inline-block;
   // }
-  .subtitle {
+  .subtitle-how-its-made h2 {
     font-family: var(--big-font);
     font-size: 30px;
     font-weight: 400;
@@ -405,16 +405,17 @@
   }
 
   .h1-how-its-made {
-    font-family: var(--big-font);
-    font-weight: 400;
-    font-size: 66px;
-    color: var(--red-passion);
-    text-align: center;
-    line-height: 66.41px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin: 0;
-    width: 534px;
+font-family: var(--big-font);
+  font-weight: 400;
+  font-size: 58px;
+  color: var(--red-passion);
+  text-align: center;
+  line-height: 66.41px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0;
+  width: 541px;
+  height: 66px;
   }
 
   .subtitle-how-its-made {
@@ -496,12 +497,6 @@
     cursor: pointer;
   }
 
-  // .btn-read-more:hover {
-  //   cursor: pointer;
-
-  //   background-color: var(--pink-elipse);
-  // }
-
   /* Section 3 Advantages */
 
   .hidden-title {
@@ -556,14 +551,14 @@
   }
 
   .section3-advantages {
-    width: 1200px;
+    width: 100%;
     height: 1229px;
   }
 
   .advantages-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-    gap: 20px; /* Gap between grid items */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
   }
 
   .advantages {

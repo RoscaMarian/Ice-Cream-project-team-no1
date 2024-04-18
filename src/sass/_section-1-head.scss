@@ -1,15 +1,10 @@
 
-// .header{
-//     background-color: rgba(255, 184, 202, 1); 
-// }
 .container{
     width: 100%;
     
     margin: 0 auto;
 }
-// a {
-//     text-decoration: none;
-// }
+
 
 .logo-container {
     display: flex;
@@ -36,9 +31,10 @@
     z-index: 1;
 }
 
-.nav-bar li:hover,
-.nav-bar li:focus{
+.nav-bar li a:hover,
+.nav-bar li a:focus{
     color: var(--red-passion);
+    transition: var(--transition);
 }
 
 .logo-svg{
@@ -59,6 +55,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.buy-button:hover {
+    background-color: var(--red-passion);
+    color: var(--white);
+    transition: var(--transition);
 }
 
 .button-svg{
@@ -66,6 +70,10 @@
     height: 8px;
     stroke: var(--red-passion);
     margin-left: 12px;
+}
+
+.button-svg:hover {
+    fill: var(--white);
 }
 
 .cup-of-milk{
@@ -106,6 +114,7 @@
     border: none;
     margin-right: 12px;
     margin-top: 24px;
+    cursor: pointer;
 }
 
 .second-button{
@@ -117,6 +126,7 @@
     height: 40px;
     border: none;
     margin-top: 24px;
+    cursor: pointer;
 }
 
 .first-button:hover,
@@ -126,6 +136,7 @@
     background-color: var(--red-passion);
     border-color: var(--red-passion);
     color: var(--white);
+    transition: var(--transition);
 }
 
 .milk-text{

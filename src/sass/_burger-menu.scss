@@ -228,7 +228,7 @@
 /* Media query pentru ecrane  1280px și mai mari */
 
 @media screen and (min-width: 1280px)  {
-    button.menu-toggle.js-menu-container {
+    .menu-toggle {
         display: none;
     }
     
