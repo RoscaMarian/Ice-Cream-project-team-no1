@@ -123,13 +123,6 @@
     background: url('../images/reviews/home.png');
 }
 
-// /* Don't need button navigation */
-// @supports (scroll-snap-type) {
-//     .carousel>a {
-//         display: none;
-//     }
-// }
-
 /* Media queries for screens wider than 768px */
 @media screen and (min-width: 768px) {
     .rvw {
