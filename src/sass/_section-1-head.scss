@@ -1,314 +1,486 @@
-
-.container{
+.container {
     width: 100%;
-    
     margin: 0 auto;
 }
 
 
 .logo-container {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
 
 .nav-bar {
-    display: flex;
-    list-style: none; 
-    padding: 0; 
-    gap: 35px;
-    width: 541px;
-    height: 21px;
-}
-.nav-bar a{
-    
-    color: var(--white);
+    display: none;
 }
 
-.nav-bar li {
-    font-family: var(--big-font);
-    font-size: var(--primary-font-size);
-    font-weight: var(--weight-fnt-big);
-    z-index: 1;
-}
-
-.nav-bar li a:hover,
-.nav-bar li a:focus{
-    color: var(--red-passion);
-    transition: var(--transition);
-}
-
-.logo-svg{
+.logo-svg {
     width: 199px;
     height: 50px;
 }
 
-.buy-button{
-    width: 159px;
-    height: 44px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: var(--white);
-    border-radius: 22px;
-    color: var(--red-passion);
-    font-weight: var(--weight-fnt-big);
-    background-color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    outline: none;
+.first-section-titles {
+    width: 218px;
+    height: 106px;
 }
 
-.buy-button:hover {
-    background-color: var(--red-passion);
-    color: var(--white);
-    transition: var(--transition);
-}
-
-.button-svg{
-    width: 4px;
-    height: 8px;
-    stroke: var(--red-passion);
-    margin-left: 12px;
-}
-
-.button-svg:hover {
-    fill: var(--white);
-}
-
-.cup-of-milk{
-    width:213px;
-    height:216px;
-}
-
-.arrow-right{
-    width: 26px;
-    height: 26px;
-}
-
-.first-section-titles{
-    width: 277px;
-    height: 137px;
-}
-
-.third-title{
+.third-title {
     font-family: var(--big-font);
-    font-size: var(--h1);
+    font-size: 26px;
     font-weight: var(--weight-fnt-common);
     color: var(--white);
 }
 
 .first-title {
-    font-size: 58px;
-    font-family: var(--big-font); 
-    font-weight: var(--weight-fnt-big); 
+    font-size: 48px;
+    font-family: var(--big-font);
+    font-weight: var(--weight-fnt-big);
     color: var(--red-passion);
-}
-.first-button{
-    background-color: var(--white);
-    border-color: var(--white);
-    color: var(--red-passion);
-    border-radius: 20px;
-    width: 107px;
-    height:40px;
-    border: none;
-    margin-right: 12px;
-    margin-top: 24px;
-    cursor: pointer;
 }
 
-.second-button{
+.first-button {
     background-color: var(--white);
-    border-color: var(--white);
     color: var(--red-passion);
     border-radius: 20px;
-    width: 138px;
-    height: 40px;
-    border: none;
-    margin-top: 24px;
+    height: 24px;
+    margin-top: 20px;
     cursor: pointer;
+    border: none;
+}
+
+.second-button {
+    background-color: var(--white);
+    color: var(--red-passion);
+    border-radius: 20px;
+    // width: 82px;
+    height: 24px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.first-button a,
+.second-button a {
+    font-family: var(--primary-font-size);
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 18.23px;
+    text-align: center;
+    color: var(--red-passion);
 }
 
 .first-button:hover,
 .second-button:hover,
 .first-button:focus,
-.second-button:focus{
+.second-button:focus {
     background-color: var(--red-passion);
-    border-color: var(--red-passion);
     color: var(--white);
     transition: var(--transition);
 }
 
-.milk-text{
-    font-family: var(--common-font);
-    color: var(--white);
-    width: 200px;
-    height: 78px;
-    margin-top: 10px;
-}
-
 .text-arrow {
-    display:flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 90px;
+    display: none;
 }
 
-.milk-photo{
-    width: 213px;
-    height: 216px;
-    margin-top: 40px;
-}
-
-.milk-can{
+.milk-can {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.elipse-hero{
-    height: 543px;
-    width: 543px;
+.elipse-hero {
+    height: 346px;
+    width: 344px;
     background-color: rgba(255, 165, 186, 1);
     border-radius: 50%;
     position: absolute;
-    top: -70px;
-    right: 295px;
+    top: -50px;
+    left: 30px;
     z-index: 0;
 }
-.hero-section{
-    background-color: rgba(255, 184, 202, 1);
-    width: 100%;
-    height: 664px;
-    padding: 37px 16px 0px 16px;
+
+.first-section-titles {
+    margin-top: 110px;
 }
 
-.hero-right{
+.hero-section {
+    background-color: rgba(255, 184, 202, 1);
+    width: 100%;
+    height: 502px;
+    padding: 8px 20px;
+}
+
+.hero-right {
     width: 100%;
     position: relative;
     margin: 0 auto;
 }
 
-.icecream-cone{
+.icecream-cone {
     position: absolute;
-    width: 237px;
-    height: 557px;
-    top: -15px;
-    right: 465px;
+    width: 171px;
+    height: 410px;
+    top: -80px;
+    right: 10px;
 }
 
-.tasty-chiquita{
-    position: absolute;
-    width: 304px;
-    height: 241px;
-    right: 16px;
-    top: 300px;
-    right: 0px;
+.tasty-chiquita {
+    display: none;
 }
 
-.cafes-elipse{
-    width: 30px;
-    height: 30px;
-    background-color: var(--white);
-    border-radius: 50%;
-    position: absolute;
-    top: 68px;
-    right: 16px;
+.food-elipse {
+    display: none;
 }
 
-.food-elipse{
-    width: 30px;
-    height: 30px;
-    background-color: var(--white);
-    border-radius: 50%;
-    position: absolute;
-    top: 160px;
-    right: 16px;
+.cafes-elipse {
+    display: none;
 }
 
 .food,
-.cafes{
-    color: var(--white);
+.cafes {
+    display: none;
 }
 
-.number{
-    color: var(--red-passion);
-    font-family: var(--big-font);
-    font-size: var(--hero-section-numbers-font-size);
-    width: 54px;
-    height: 53px;
-    letter-spacing: 0.04em;
-}
-.duo{
+.duo {
     display: flex;
     flex-direction: column;
     align-items: self-end;
     position: absolute;
     z-index: 1;
 }
-.cafes-group .duo{
+
+.cafes-group .duo {
     top: 72;
     right: 34;
 }
-.food-group .duo{
+
+.food-group .duo {
     top: 163;
     right: 34;
 }
 
-@media screen and (max-width: 767px) {
+.cup-of-milk {
+    display: none;
+}
 
-    /* Stiluri pentru telefoane mobile */
-    .nav-bar {
-        display: none;
-    }
+.number {
+    display: none;
+}
 
-    .milk-can {
-        display: none;
-    }
+@media screen and (min-width:768px) {
 
-    .tasty-chiquita {
-        display: none;
-    }
-
-    .cafes-group {
-        display: none;
-    }
-
-    .duo {
-        display: none;
-    }
-
-    .food-elipse {
-        display: none;
+    .hero-section {
+        height: 416px;
+        padding: 32px;
     }
 
     .buy-button {
+        display: flex;
+    }
+
+    .buy-button {
+        width: 159px;
+        height: 44px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: var(--white);
+        border-radius: 22px;
+        color: var(--red-passion);
+        font-weight: var(--weight-fnt-big);
+        background-color: var(--white);
         display: none;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        outline: none;
     }
 
-    .hero-right {
-        z-index: 1;
+    .buy-button:hover {
+        background-color: var(--red-passion);
+        color: var(--white);
+        transition: var(--transition);
     }
 
-    .second-button {
-        position: relative;
-        z-index: 1;
+    .button-svg {
+        width: 4px;
+        height: 8px;
+        stroke: var(--red-passion);
+        margin-left: 12px;
+    }
+
+    .button-svg:hover {
+        fill: var(--white);
+    }
+
+    .cup-of-milk {
+        width: 152px;
+        height: 154px;
+        display: flex;
+    }
+
+    .arrow-right {
+        width: 18px;
+        height: 18px;
+    }
+
+    .first-section-titles {
+        width: 162px;
+        height: 80px;
     }
 
     .third-title {
-        position: relative;
+        font-size: 22px;
+    }
+
+    .first-title {
+        font-size: 34px;
+    }
+
+    .first-button,
+    .second-button {
+        margin-top: 20px;
+    }
+
+    .milk-text {
+        font-size: 8px;
+        width: 114px;
+        height: 48px;
+        margin-top: 50px;
+        line-height: 12px;
+        font-family: var(--common-font);
+        color: var(--white);
+        margin-bottom: 0px;
+    }
+
+    .text-arrow {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 80px;
         z-index: 1;
     }
 
-    .hero-right {
-        display: grid;
-        justify-content: space-around;
-        right: 40px;
-        top: 28px;
+    .milk-photo {
+        height: 216px;
+    }
+
+    .number {
+        display: flex;
+        color: var(--red-passion);
+        font-family: var(--big-font);
+        font-size: 28px;
+        letter-spacing: 0.04em;
+        margin-top: -80px;
+    }
+
+    .tasty-chiquita {
+        position: absolute;
+        width: 190px;
+        height: 150px;
+        right: 16px;
+        top: 160px;
+        right: 0px;
+        display: flex;
+    }
+
+    .food-elipse {
+        width: 16px;
+        height: 16px;
+        background-color: var(--white);
+        border-radius: 50%;
+        position: absolute;
+        top: 83px;
+        right: 26px;
+        display: flex;
+    }
+
+    .cafes-elipse {
+        width: 16px;
+        height: 16px;
+        background-color: var(--white);
+        border-radius: 50%;
+        position: absolute;
+        top: -13px;
+        right: 26px;
+        display: flex;
+    }
+
+    .food,
+    .cafes {
+        color: var(--white);
+        font-size: 8px;
+        display: flex;
+    }
+
+    .elipse-hero {
+        height: 335px;
+        width: 333px;
+        top: -60px;
+        left: 203px;
+    }
+
+    .first-section-titles {
+        margin-top: 10;
+    }
+
+    .icecream-cone {
+        width: 143px;
+        height: 336px;
+        top: -25px;
+        right: 255px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+
+    .hero-section {
+        height: 664px;
+        padding: 37px 16px 0px 16px;
+    }
+
+    .nav-bar {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        gap: 35px;
+        width: 541px;
+        height: 21px;
+    }
+
+    .nav-bar a {
+
+        color: var(--white);
+    }
+
+    .nav-bar li {
+        font-family: var(--big-font);
+        font-size: var(--primary-font-size);
+        font-weight: var(--weight-fnt-big);
+        z-index: 1;
+    }
+
+    .nav-bar li a:hover,
+    .nav-bar li a:focus {
+        color: var(--red-passion);
+        transition: var(--transition);
+    }
+
+    .cup-of-milk {
+        width: 213px;
+        height: 216px;
+    }
+
+    .arrow-right {
+        width: 26px;
+        height: 26px;
+    }
+
+    .first-section-titles {
+        width: 277px;
+        height: 137px;
+    }
+
+    .third-title {
+        font-size: var(--h1);
+    }
+
+    .first-title {
+        font-size: 58px;
     }
 
     .first-button {
-        position: relative;
-        z-index: 1;
+        width: 107px;
+        height: 40px;
+        margin-right: 16px;
+        margin-top: 20px;
     }
+
+    .second-button {
+        width: 138px;
+        height: 40px;
+        margin-right: 16px;
+        margin-top: 20px;
+    }
+
+    .first-button a,
+    .second-button a {
+        font-size: 14px;
+    }
+
+    .milk-text {
+        font-family: var(--common-font);
+        font-size: 14px;
+        color: var(--white);
+        width: 200px;
+        height: 78px;
+        margin-top: 10px;
+        line-height: 19.6px;
+        margin-bottom: 24px;
+    }
+
+    .text-arrow {
+        margin-bottom: 0px;
+        margin-top: 80px;
+        gap: 0px;
+    }
+
+    .cup-of-milk {
+        margin-top: 30px;
+    }
+
+    .number {
+        color: var(--red-passion);
+        font-family: var(--big-font);
+        font-size: var(--hero-section-numbers-font-size);
+        width: 54px;
+        height: 53px;
+        letter-spacing: 0.04em;
+        margin-top: -30px;
+    }
+
+    .food-elipse {
+        width: 30px;
+        height: 30px;
+        top: 130px;
+        right: 16px;
+    }
+
+    .cafes-elipse {
+        width: 30px;
+        height: 30px;
+        background-color: var(--white);
+        border-radius: 50%;
+        position: absolute;
+        top: 40px;
+        right: 16px;
+    }
+
+    .food,
+    .cafes {
+        color: var(--white);
+        font-size: 14px;
+    }
+
+    .tasty-chiquita {
+        position: absolute;
+        width: 304px;
+        height: 241px;
+        right: 16px;
+        top: 300px;
+        right: 0px;
+    }
+
+    .elipse-hero {
+        height: 534px;
+        width: 534px;
+        top: -70px;
+        left: 540px;
+    }
+
+    .icecream-cone {
+        width: 237px;
+        height: 557px;
+        top: -15px;
+        right: 355px;
+    }
+
 }
