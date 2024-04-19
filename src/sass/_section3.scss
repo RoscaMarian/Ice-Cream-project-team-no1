@@ -252,9 +252,6 @@
 
 /* Stilizare Tableta  768px  */
 @media screen and (min-width: 768px) {
-  // .body-how-its-made {
-  //   display: inline-block;
-  // }
   .container-how-its-made {
     height: 1092px;
     width: 100%;
@@ -390,9 +387,7 @@
 }
 /* Desktop styles */
 @media screen and (min-width: 1280px) {
-  // .body-how-its-made {
-  //   display: inline-block;
-  // }
+
   .subtitle-how-its-made h2 {
     font-family: var(--big-font);
     font-size: 30px;
@@ -536,10 +531,6 @@ font-family: var(--big-font);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-  }
-
-  .advantage {
-    text-align: baseline;
   }
 
   .advantage h3 {
